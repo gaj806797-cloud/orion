@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>ORION – Workbook1</title>
+
+<!-- GOOGLE FONTS : ONLY 3 (Courier New system font hai) -->
+<link href="https://fonts.googleapis.com/css2?
+family=Playfair+Display&
+family=Lobster+Two&
+family=Parisienne
+&display=swap" rel="stylesheet">
+
+<!-- LUCKYSHEET CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/css/pluginsCss.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/plugins.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/css/luckysheet.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/assets/iconfont/iconfont.css"/>
+
+<style>
+html,body{
+  margin:0;
+  height:100%;
+  font-family:Playfair Display, serif;
+}
+#titlebar{
+  height:40px;
+  background:#f3f3f3;
+  display:flex;
+  align-items:center;
+  padding:0 12px;
+  border-bottom:1px solid #ccc;
+}
+#titlebar strong{margin-right:auto;}
+#orion{
+  height:calc(100% - 40px);
+}
+</style>
+</head>
+
+<body>
+
+<div id="titlebar">
+  <strong>ORION – Workbook1</strong>
+</div>
+
+<div id="orion"></div>
+
+<!-- LUCKYSHEET JS -->
+<script src="https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/js/plugin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luckysheet/dist/luckysheet.umd.js"></script>
+
+<script>
+/* ===== FINAL 4 FONTS ONLY ===== */
+luckysheet.fontList = [
+  { fontName: "Playfair Display" },
+  { fontName: "Lobster Two" },
+  { fontName: "Parisienne" },
+  { fontName: "Courier New" }
+];
+
+/* ===== CREATE SHEET ===== */
+luckysheet.create({
+  container: "orion",
+  title: "ORION",
+  lang: "en",
+  defaultFontName: "Playfair Display",
+  defaultFontSize: 12,
+  data: [{ name:"Sheet1", row:100, column:26 }]
+});
+</script>
+
+</body>
+</html>
